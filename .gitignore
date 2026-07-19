@@ -67,3 +67,6 @@ crashlytics-build.properties
 
 # JetBrains Rider project files (per-developer)
 .idea/
+
+# Local test-run output (see docs/how-to-run-tests.md)
+/TestResults/

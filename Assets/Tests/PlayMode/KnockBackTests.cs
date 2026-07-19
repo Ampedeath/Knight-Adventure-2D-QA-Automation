@@ -28,11 +28,10 @@ public class KnockBackTests
         Object.Destroy(_damageSource);
     }
 
-    [UnityTest]
-    public IEnumerator KnockBack_GetKnockedBack_SetsIsGettingKnockedBackTrue()
+    [Test]
+    public void KnockBack_GetKnockedBack_SetsIsGettingKnockedBackTrue()
     {
         _knockBack.GetKnockedBack(_damageSource.transform);
-        yield return null;
 
         Assert.IsTrue(_knockBack.IsGettingKnockedBack);
     }
